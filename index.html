@@ -1,24 +1,53 @@
-`<!DOCTYPE html>
+`
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8d4621267d.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="bmi.png">
+    <link rel="stylesheet" href="style.css">
     <title>BMI Calculator</title>
+
 </head>
+
 <body>
-    <h1>BMI Calculator</h1>
-    <form>
-      <label for="height">Tinggi (meter):</label>
-      <input type="number" step="0.01" id="height" ><br><br>
-      <label for="weight">Berat (kg):</label>
-      <input type="number" step="0.01" id="weight"><br><br>
-      <button type="button" onclick="calculateBMI()">Hitung BMI</button>
-    </form>
-    <br>
-    <div id="result"></div>
-    <div id="category"></div>
+    <div id="fcontainer">
+
+        <main id="container">
+            <header>
+                <h1 id="title">Check your BMI</h1>
+            </header>
+            <i class="fa-sharp fa-solid fa-scale-balanced"></i>
+            <p id="intruction">Enter your weight and height below to check your BMI results</p>
+            
+            <form>
+                <label for="weight">Put your weight in here (KG):</label>
+                <input type="number" step="0.2" id="weight" placeholder="50"><br><br>
+                <label for="height">And your height in here(CM):</label>
+                <input type="number" step="0.2" id="height" autofocus placeholder="160"><br><br>
+                <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+            </form>
+            <br>
+        </main>
+
+        <div id="information">
+            <img src="logo.png" alt="logo">
+            <div id="sub-1"></div>
+            <div id="result"></div>
+            <div id="sub-2"></div>
+            <div id="category"></div>
+            <div id="sub-3"></div>
+            <div id="detail"></div>
+            <form>
+                <button type="button" onclick="calculateReset()" id="button">Reset Result</button>
+            </form>
+        </div>
+
+    </div>
 </body>
+
 </html>
