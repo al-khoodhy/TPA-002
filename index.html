@@ -24,12 +24,13 @@
             <i class="fa-sharp fa-solid fa-scale-balanced"></i>
             <p id="intruction">Enter your weight and height below to check your BMI results</p>
             
-            <form>
+            <form id="form">
                 <label for="weight">Put your weight in here (KG):</label>
                 <input type="number" step="0.2" id="weight" placeholder="50"><br><br>
                 <label for="height">And your height in here(CM):</label>
                 <input type="number" step="0.2" id="height" autofocus placeholder="160"><br><br>
-                <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+                <div id="warning"></div>
+                <button type="submit" id="submit">Calculate BMI</button>
             </form>
             <br>
         </main>

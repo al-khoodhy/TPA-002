@@ -55,6 +55,13 @@ form {
     
   }
   
+#warning{
+    font-style: italic;
+    color: #e7471b;
+    position:absolute;
+    bottom: 100px;
+}
+
   button {
     padding: 10px 20px;
     font-size: 18px;
@@ -87,20 +94,22 @@ form {
   
    #sub-1, #sub-2, #sub-3{
     font-size: 24px; 
+    font-weight: bold;
+    color: 223843;
   }
 
-     
   
   #result, #category, #detail{
     font-size: 20px;
     margin-bottom: 20px;
+    color: 223843;
   }
 
   #information{
     position: relative;
-    display: block;
+    display: none;
     border-start-start-radius: 20px;
-    padding: 45px 24px;
+    padding: 45px 28px;
     width: 430px;
     height: 411px;
   }
